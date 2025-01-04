@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library - Transaksi</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="validation.js"></script>
+</head>
+<body>
+    <header>
+        <img src="logoperpus.png" alt="Logo Perpustakaan" width="100">
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="peminjaman.html">Peminjaman</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2><big>Halaman Peminjaman Buku</big></h2>
+        <center>
+        <form id="transaksiForm">
+            <table>
+                <tr>
+                    <td width="110"><b>Nama</b></td>
+                    <td>:</td>
+                    <td><input type="text" id="nama" name="nama" size="20"></td>
+                </tr>
+                <tr>
+                    <td><b>Jenis Kelamin</b></td>
+                    <td>:</td>
+                    <td>
+                        <input type="radio" id="jkel_pria" name="jkel" value="Pria"> Pria
+                        <input type="radio" id="jkel_wanita" name="jkel" value="Wanita"> Wanita
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>No. KTP/KTM</b></td>
+                    <td>:</td>
+                    <td><input type="text" id="ktp" name="ktp" size="15"></td>
+                </tr>
+                <tr>
+                    <td><b>Tanggal Peminjaman</b></td>
+                    <td>:</td>
+                    <td><input type="date" id="tanggal" name="tanggal"></td>
+                </tr>
+                <tr>
+                    <td><b>Tanggal Pengembalian</b></td>
+                    <td>:</td>
+                    <td><input type="date" id="tanggal" name="tanggal"></td>
+                </tr>
+                <tr>
+                    <td><b>Alamat</b></td>
+                    <td>:</td>
+                    <td><textarea id="alamat" name="alamat" rows="4" cols="25"></textarea></td>
+                </tr>
+                <tr>
+                    <td><b>No. Telefon</b></td>
+                    <td>:</td>
+                    <td><input type="text" id="telepon" name="telepon" size="15"></td>
+                </tr>
+                <tr>
+                    <td><b>Nama Buku</b></td>
+                    <td>:</td>
+                    <td><input type="text" id="namabuku" name="namabuku" size="15"></td>
+                </tr>
+                <tr>
+                    <td><b>Jenis Buku</b></td>
+                    <td>:</td>
+                    <td>
+                        <select id="jenisBuku" name="jenisBuku">
+                            <option value="">Pilih disini</option>
+                            <option value="Fiksi">Fiksi</option>
+                            <option value="Non-Fiksi">Non-Fiksi</option>
+                            <option value="Pendidikan">Pendidikan</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <input type="submit" value="Simpan">
+                        <input type="reset" value="Cancel">
+                    </td>
+                </tr>
+            </table>
+        </form>
+        </center>
+    </main>
+    <footer>
+        <h3><b>Design By Muhamad Saint Qitri &copy; 2025 Library</b></h3>
+    </footer>
+</body>
+</html>
